@@ -19,7 +19,7 @@ import '@openzeppelin/contracts/token/ERC20/IERC20.sol';
 
      }  
 
-     //PAy function
+     //Pay function here
      //we make it external so we can call it from outside the smart contracts.
      function pay(uint amount, uint paymentId) external {
          dai.transferFrom(msg.sender, admin, amount);  
